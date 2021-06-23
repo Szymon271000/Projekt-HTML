@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt</title>
     <link rel="stylesheet" href="./assets/css/main.css">
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js" defer></script>
 </head>
 <body>
     <header id="Home">
@@ -58,7 +58,7 @@
     </section>
     <section id="Process">
         <div class="icon_with_description">
-            <div class="project">
+            <div>
                 <img src="./assets/img/icons/portfolio.png" alt="">
                 <span>548</span>
                 <p>PROJECTS COMPLETED</p>
@@ -80,52 +80,67 @@
             </div>
         </div>
     </section>
-    <section id="Services">
-        <div class="row">
-        <div class="column">
-            <img src="./assets/img/1.jpg" width=100% alt="">
+    <!--<section id="Services">
+        <div class="img"><div class="img-hover"></div></div>
+        <div class="img"><div class="img-hover"></div></div>
+        <div class="img"><div class="img-hover"></div></div>
+        <div class="img"><div class="img-hover"></div></div>
+        <div class="img"><div class="img-hover"></div></div>
+        <div class="img"><div class="img-hover"></div></div>
+        <div class="img"><div class="img-hover"></div></div>
+        <div class="img"><div class="img-hover"></div></div>
+        <div class="loading">-->
+            <section id="Services">
+                <div class="row">
+                <div class="column">
+                    <img src="./assets/img/1.jpg" width=100% alt="">
+                </div>
+                <div class="column">
+                    <img src="./assets/img/2.jpg" width=100% alt="">
+                </div>
+                <div class="column">
+                    <img src="./assets/img/3.jpg" width=100% alt="">
+                </div>    
+                <div class="column">
+                    <img src="./assets/img/4.jpg" width=100% alt="">
+                </div>    
+                <div class="column">
+                    <img src="./assets/img/5.jpg" width=100% alt="">
+                </div>  
+                <div class="column">
+                    <img src="./assets/img/6.jpg" width=100% alt="">
+                </div>  
+                <div class="column">
+                    <img src="./assets/img/7.jpg" width=100% alt="">
+                </div>    
+                <div class="column">
+                    <img src="./assets/img/8.jpg" width=100% alt="">
+                </div>
+                </div>
+            <div class="loading">LOAD MORE WORK
         </div>
-        <div class="column">
-            <img src="./assets/img/2.jpg" width=100% alt="">
-        </div>
-        <div class="column">
-            <img src="./assets/img/3.jpg" width=100% alt="">
-        </div>    
-        <div class="column">
-            <img src="./assets/img/4.jpg" width=100% alt="">
-        </div>    
-        <div class="column">
-            <img src="./assets/img/5.jpg" width=100% alt="">
-        </div>  
-        <div class="column">
-            <img src="./assets/img/6.jpg" width=100% alt="">
-        </div>  
-        <div class="column">
-            <img src="./assets/img/7.jpg" width=100% alt="">
-        </div>    
-        <div class="column">
-            <img src="./assets/img/8.jpg" width=100% alt="">
-        </div>
-        </div>
-        <div class="loading">
-            LOAD MORE WORK
-        </div>
-        <div class=work_process>
+    </section>
+        <section class="video">
+            <div class=work_process>
                 <h1>Our Work Process</h1>
                 <p>Was years it seasons was there form he in them together over that, third sixth gathered female creeping bearing beyold years.</p>
         </div>
         <div class="video-wrapper">
             <div class="video-container" id="video-container">
-                <video controls id="video" preload="metadata" poster="https://as1.ftcdn.net/jpg/00/65/37/46/1000_F_65374698_HMw0iG3XDvCdGWLqYVOFyyN44r4Mubu2.jpg">
-                <source src="https://www.pexels.com/video/aerial-view-of-an-an-agricultural-land-1475934/" type="video/mp4">
-            </video>
-            <div class="play-button-wrapper">
-                <div title="Play video" class="play-gif" id="circle-play-b">
-                    <img src="./assets/img/icons/playbutton.png" width="50" height="50" alt="">
+                <video controls id="video" preload="metadata">
+                    <source src="./assets/img/Pexels Videos 1466212.mp4"type="video/mp4">
+                </video>
+        
+                <div class="play-button-wrapper">
+                    <div title="Play video" class="play-gif" id="circle-play-b">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                            <path d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM26 61.56V18.44L64 40z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        </section>
     <section id="Testimonials">
         <div class="illustrations">
             <div>
@@ -187,33 +202,69 @@
         </section>
     </section>
     <section id="Contact">
-        <h1>Need a project?</h1>
-        <p>Let us know what you are looking for in an agency. We' ll take a look and see if this could be the start of something beatiful.</p>
-        <input type="text" name="" id="">
-        <input type="email" name="" id="">
-        <input type="text" name="" id="">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button>Send message</button>
-        <div>
-            <div>Design, Inc.</div> 
-            <div>Designed by robiruk.</div>
-            <div>hello@pirolltheme.com</div>
-            <div>++44987065908</div>
-            <ul>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Career</li>
-                <li>News</li>
-                <li>Events</li>
-                <li>Contact</li>
-                <li>Legals</li>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Dribble</li>
-            </ul>
+        <div class="contact_elements">
+            <h1>Need a project?</h1>
+            <p>Let us know what you are looking for in an agency. We' ll take a look and see if this could be the start of something beatiful.</p>
         </div>
+            <div class="inputs">
+                    <div class="inputs_name_and_email">
+                        <input type="text" placeholder="Your name">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <br>
+                    <div  class="input_title">
+                        <input type="text" placeholder="Yout title">
+                    </div>
+                    <br>
+                    <div class="input_comment">
+                        <textarea name="" id="comment" cols="30" rows="10" placeholder="Your comment"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="message_button">SEND MESSAGE</button>
+                    </div>
+            </div>
     </section>
+        <footer>
+            <div class="end_page">
+                <div class="information">
+                    <ul>
+                        <li>Piroll Design, Inc.</li>
+                        <li>&copy; Piroll. All rights deserved.</li>
+                        <li>Designed by robiruk.</li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <ul>
+                        <li>hello@pirolltheme.com</li>
+                        <li>+44987065908</li>
+                    </ul>
+                </div > 
+                <div class="information">
+                    <ul>
+                        <li>Projects</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <ul>
+                        <li>News</li>
+                        <li>Events</li>
+                        <li>Contact</li>
+                        <li>Legals</li>
+                    </ul>
+                </div>
+                <div class="information">
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Dribbble</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
