@@ -176,39 +176,73 @@ header{
         text-align: center;
     }
 }
+
 #Services{
-    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.imagebox{
     position: relative;
-    margin-bottom: 75px;
-}
-
-.column{
-    float: left;
     width: 25%;
+    height: 500px;
+    overflow: hidden;
 }
 
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#Services img:hover{
-     filter: brightness(50%);
-}
-
-.overlay1{
-    background-color: rgba(0,0,0,0);
-    position: absolute;
-    width: 100%;
+.imagebox img{
     height: 100%;
-    left: 0;
-    top: 0;
+    width: 100%;
 }
 
-.overlay1:hover{
-    background-image: url(../img/icons/look.png);
-    background-color: rgba(0, 0, 0, 0.5);
+.imagebox::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 0%;
+    transform: skewX(-40deg);
+    transition: all 0.5s;
+}
+
+.imagebox:hover::before{
+    left: -50%;
+    width: 200%;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.content ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.imagebox:hover .content{
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .container{
+        display: flex ;
+        flex-direction: column;
+    }
+    .imagebox{
+        width: 100%;
+    }
 }
 
 .loading{
@@ -372,6 +406,11 @@ svg {
     display: flex;
     justify-content: center;
 }
+
+input, textarea{
+    font-size: 20px;
+}
+
 .inputs{
     display: flex;
     justify-content: center;
@@ -395,7 +434,7 @@ svg {
     width: 100%;
 }
 .inputs_name_and_email input{
-    width: 49%;
+    width: 45%;
 }
 
 .input_title input, .input_comment textarea{
